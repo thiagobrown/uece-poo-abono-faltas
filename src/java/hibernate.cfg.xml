@@ -2,21 +2,13 @@
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.datasource">java:comp/env/jdbc/ds-blank</property>
+        <property name="hibernate.connection.datasource">java:comp/env/jdbc/abono-falta</property>
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.show_sql">false</property>
         <property name="hibernate.format_sql">true</property>
-        <!--<property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>--> 
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <mapping class="poo.abonofalta.domain.Solicitacao"/>
         <mapping class="poo.abonofalta.domain.Funcionario"/>
-<!--        <mapping class="poo.abonofalta.domain.AguardandoChefia"/>
-        <mapping class="poo.abonofalta.domain.AguardandoRH"/>
-        <mapping class="poo.abonofalta.domain.Aprovada"/>
-        <mapping class="poo.abonofalta.domain.Cancelada"/>
-        <mapping class="poo.abonofalta.domain.NovaSolicitacao"/>
-        <mapping class="poo.abonofalta.domain.Recusada"/>
-        <mapping class="poo.abonofalta.domain.Status"/> -->
     </session-factory>
 </hibernate-configuration>
